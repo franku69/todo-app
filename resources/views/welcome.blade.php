@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Todo App</title>
+    <title>Welcome to Gym App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +24,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
-            background-color: #e83e8c;
+            background-color: blue;
             color: #fff;
         }
 
@@ -155,7 +155,7 @@
 <header>
     <div class="container">
         <div>
-            <h1>Todo List App</h1>
+            <h1>Gym List App</h1>
         </div>
         <div id="search-bar">
             <form id="search-form" action="{{ route('product.search') }}" method="GET">
@@ -175,7 +175,7 @@
     <section id="featured-products">
     @forelse($products as $product)
     <div class="product">
-        <img src="{{ asset('images/task.jpg') }}" alt="{{ $product->task }}">
+        <img src="{{ asset('images/train.jpg') }}" alt="{{ $product->task }}">
         <div class="product-info">
             <h3 class="product-title">{{ $product->task }}</h3>
             <p class="product-description">{{ $product->description }}</p>

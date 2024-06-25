@@ -77,7 +77,7 @@
             <tr>
                 <th>ID</th>
                 <th>Task</th>
-                <th>Value</th>
+                <th>Reps</th>
                 <th>Description</th>
                 <th>Edit</th>
                 <th>Delete</th>

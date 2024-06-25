@@ -95,8 +95,8 @@ class TodoController extends Controller
             return view('products.index', ['products' => $products]); 
         }
         public function welcome()
-{
-    $products = Todo::all(); // Fetch all products or adjust query as needed
-    return view('welcome', compact('products'));
-}
+        {
+            $products = Todo::all(); // Fetch all products
+            return view('welcome', compact('products'));
+        }
 }
